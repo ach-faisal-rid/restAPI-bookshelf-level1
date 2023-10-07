@@ -1,0 +1,11 @@
+CREATE TABLE `book` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `year` int(5) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `isComplete` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO `book` (`id`, `title`, `year`, `author`, `isComplete`) VALUES
+(1, 'percobaan 2', 2020, 'zuz', 0),
+(2, 'up ke bawah update 2', 2021, 'zaldi', 1);
