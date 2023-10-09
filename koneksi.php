@@ -15,7 +15,7 @@ if (!$conn) {
 <?php
 $servername = "localhost";
 $username = "root";
-$password = ""; // kalau tidak kalian password biarkan kosong
+$password = ""; // kalau tidak memakai password biarkan kosong
 $db = "bookshelf";
     // membuat koneksi ke db
     $conn = mysqli_connect($servername, $username, $password, $db);
