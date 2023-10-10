@@ -1,7 +1,8 @@
+// case 2 tidak pake password
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root"; // ini yang memakai password
+$password = ""; // ini yang memakai password root
 $db = "bookshelf";
 
 // Create connection
@@ -11,11 +12,14 @@ $conn = mysqli_connect($servername, $username, $password, $db);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-// echo "connection successfully";
+// echo "Connected successfully";
+?>
+
+// case 1 pake password
 <?php
 $servername = "localhost";
 $username = "root";
-$password = ""; // kalau tidak memakai password biarkan kosong
+$password = "root";
 $db = "bookshelf";
     // membuat koneksi ke db
     $conn = mysqli_connect($servername, $username, $password, $db);
@@ -24,3 +28,4 @@ $db = "bookshelf";
         die("Connection failed: " . mysqli_connect_error());
     }
 // echo "Connected successfully";
+?>
