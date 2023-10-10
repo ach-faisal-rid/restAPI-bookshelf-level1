@@ -4,6 +4,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
     echo json_encode(["error" => "Method tidak sesuai"]);
     exit();
 }
+// kode debugging
+echo "metode sesuai";
+// Pencetakan pesan untuk debugging
+error_log("Metode sesuai");
 
 require_once __DIR__ . "/koneksi.php";
 // Query untuk mengambil semua data buku tanpa pencarian
